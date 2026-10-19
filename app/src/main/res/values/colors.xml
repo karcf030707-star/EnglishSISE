@@ -2,4 +2,26 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Identidad EnglishSISE / UTCJ -->
+    <color name="sise_navy">#0B2A5B</color>
+    <color name="sise_navy_light">#1A4A8F</color>
+    <color name="sise_accent">#4FC3F7</color>
+    <color name="sise_background">#F3F6FB</color>
+    <color name="sise_card_stroke">#E2E8F2</color>
+    <color name="sise_text_primary">#0F1B2D</color>
+    <color name="sise_text_secondary">#5B6B82</color>
+
+    <!-- Colores por perfil (Anexo C del ERS) -->
+    <color name="perfil_alumno_utcj">#1E63C6</color>
+    <color name="perfil_alumno_externo">#6A4BC4</color>
+    <color name="perfil_docente">#2E8B47</color>
+    <color name="perfil_administrador">#2F3E55</color>
+
+    <!-- Fondos de los mosaicos del menú -->
+    <color name="tile_blue_bg">#E7F0FD</color>
+    <color name="tile_green_bg">#E6F5EA</color>
+    <color name="tile_red_bg">#FDECEC</color>
+    <color name="tile_green">#2E9E4F</color>
+    <color name="tile_red">#D93838</color>
 </resources>

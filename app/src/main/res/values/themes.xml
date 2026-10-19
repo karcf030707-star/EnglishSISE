@@ -1,9 +1,59 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.EnglishSISE" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.EnglishSISE" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/sise_navy</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/sise_accent</item>
+        <item name="android:windowBackground">@color/sise_background</item>
     </style>
 
     <style name="Theme.EnglishSISE" parent="Base.Theme.EnglishSISE" />
+
+    <!-- Botón grande de selección de perfil -->
+    <style name="Widget.EnglishSISE.BotonPerfil" parent="Widget.Material3.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="iconSize">28dp</item>
+        <item name="iconPadding">20dp</item>
+        <item name="iconTint">@color/white</item>
+        <item name="elevation">2dp</item>
+    </style>
+
+    <!-- Mosaico del menú de inicio -->
+    <style name="EnglishSISE.Mosaico" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="cardCornerRadius">14dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="strokeColor">@color/sise_card_stroke</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="EnglishSISE.MosaicoIcono" parent="">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:padding">11dp</item>
+    </style>
+
+    <style name="EnglishSISE.MosaicoTexto" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sise_text_primary</item>
+    </style>
 </resources>

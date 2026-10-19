@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pantalla 2 · Inicio del perfil Alumno UTCJ (Tabla 4 y Anexo C del ERS). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sise_navy"
+    android:orientation="vertical"
+    tools:context=".InicioAlumnoUtcjActivity">
+
+    <!-- Barra superior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp">
+
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/menu"
+            android:src="@drawable/ic_menu"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/logo_englishsise"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/sise_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Saludo -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/bg_icono_circular"
+                    android:backgroundTint="@color/tile_blue_bg"
+                    android:importantForAccessibility="no"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_person"
+                    app:tint="@color/sise_navy" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtSaludo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/saludo_ejemplo"
+                        android:textColor="@color/sise_text_primary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/perfil_alumno_utcj"
+                        android:textColor="@color/sise_text_secondary"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Banner motivacional -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_banner">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="110dp"
+                    android:text="@string/banner_alumno_utcj"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="16dp"
+                    android:alpha="0.35"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_school"
+                    app:tint="@color/white" />
+            </FrameLayout>
+
+            <!-- Módulos del perfil -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="-6dp"
+                android:layout_marginTop="14dp"
+                android:columnCount="3">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardCursos"
+                    style="@style/EnglishSISE.Mosaico">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:minHeight="104dp"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            style="@style/EnglishSISE.MosaicoIcono"
+                            android:background="@drawable/bg_icono_redondeado"
+                            android:backgroundTint="@color/tile_blue_bg"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ic_menu_book"
+                            app:tint="@color/perfil_alumno_utcj" />
+
+                        <TextView
+                            style="@style/EnglishSISE.MosaicoTexto"
+                            android:text="@string/modulo_cursos_disponibles" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardPerfil"
+                    style="@style/EnglishSISE.Mosaico">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:minHeight="104dp"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            style="@style/EnglishSISE.MosaicoIcono"
+                            android:background="@drawable/bg_icono_redondeado"
+                            android:backgroundTint="@color/tile_blue_bg"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ic_person"
+                            app:tint="@color/perfil_alumno_utcj" />
+
+                        <TextView
+                            style="@style/EnglishSISE.MosaicoTexto"
+                            android:text="@string/modulo_mi_perfil" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardCredencial"
+                    style="@style/EnglishSISE.Mosaico">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:minHeight="104dp"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            style="@style/EnglishSISE.MosaicoIcono"
+                            android:background="@drawable/bg_icono_redondeado"
+                            android:backgroundTint="@color/tile_blue_bg"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ic_credencial"
+                            app:tint="@color/perfil_alumno_utcj" />
+
+                        <TextView
+                            style="@style/EnglishSISE.MosaicoTexto"
+                            android:text="@string/modulo_mi_credencial" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardPagoLibros"
+                    style="@style/EnglishSISE.Mosaico">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:minHeight="104dp"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            style="@style/EnglishSISE.MosaicoIcono"
+                            android:background="@drawable/bg_icono_redondeado"
+                            android:backgroundTint="@color/tile_green_bg"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ic_pago"
+                            app:tint="@color/tile_green" />
+
+                        <TextView
+                            style="@style/EnglishSISE.MosaicoTexto"
+                            android:text="@string/modulo_pago_libros" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardNotificaciones"
+                    style="@style/EnglishSISE.Mosaico">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:minHeight="104dp"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            style="@style/EnglishSISE.MosaicoIcono"
+                            android:background="@drawable/bg_icono_redondeado"
+                            android:backgroundTint="@color/tile_red_bg"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ic_notifications"
+                            app:tint="@color/tile_red" />
+
+                        <TextView
+                            style="@style/EnglishSISE.MosaicoTexto"
+                            android:text="@string/modulo_notificaciones" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:itemActiveIndicatorStyle="@null"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_nav_alumno_utcj" />
+</LinearLayout>

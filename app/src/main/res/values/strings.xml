@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">EnglishSISE</string>
+    <string name="logo_englishsise">English<font color="#4FC3F7">SISE</font></string>
+    <string name="subtitulo_sistema">Sistema de control de cursos de Inglés</string>
+    <string name="utcj">UTCJ</string>
+    <string name="utcj_nombre">Universidad Tecnológica de Ciudad Juárez</string>
+
+    <!-- Acceso inicial (RF-01) -->
+    <string name="como_deseas_ingresar">¿Cómo deseas ingresar?</string>
+    <string name="perfil_alumno_utcj">Alumno UTCJ</string>
+    <string name="perfil_alumno_externo">Alumno Externo</string>
+    <string name="perfil_docente">Docente</string>
+    <string name="perfil_administrador">Administrador</string>
+
+    <!-- Inicio Alumno UTCJ (Tabla 4) -->
+    <string name="saludo_ejemplo">Hola, Karla Cruz</string>
+    <string name="banner_alumno_utcj">¡Tu esfuerzo también se nota en inglés!</string>
+    <string name="modulo_inicio">Inicio</string>
+    <string name="modulo_mi_perfil">Mi perfil</string>
+    <string name="modulo_mi_credencial">Mi credencial</string>
+    <string name="modulo_cursos_disponibles">Cursos disponibles</string>
+    <string name="modulo_pago_libros">Pago de libros</string>
+    <string name="modulo_notificaciones">Notificaciones</string>
+    <string name="nav_perfil">Perfil</string>
+    <string name="nav_credencial">Credencial</string>
+    <string name="nav_cursos">Cursos</string>
+    <string name="nav_mas">Más</string>
+    <string name="menu">Menú</string>
+    <string name="proximamente">%1$s: próximamente</string>
 </resources>

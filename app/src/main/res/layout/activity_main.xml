@@ -1,19 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- Pantalla 1 · Acceso inicial (RF-01): selección del tipo de ingreso. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_header_gradiente"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- Encabezado con logotipo -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:paddingBottom="32dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logo_englishsise"
+            android:textColor="@color/white"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/subtitulo_sistema"
+            android:textColor="#CCFFFFFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Tarjeta blanca con los perfiles -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_tarjeta_acceso"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="32dp"
+            android:paddingBottom="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/como_deseas_ingresar"
+                android:textColor="@color/sise_text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAlumnoUtcj"
+                style="@style/Widget.EnglishSISE.BotonPerfil"
+                android:backgroundTint="@color/perfil_alumno_utcj"
+                android:text="@string/perfil_alumno_utcj"
+                app:icon="@drawable/ic_school" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAlumnoExterno"
+                style="@style/Widget.EnglishSISE.BotonPerfil"
+                android:backgroundTint="@color/perfil_alumno_externo"
+                android:text="@string/perfil_alumno_externo"
+                app:icon="@drawable/ic_person" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDocente"
+                style="@style/Widget.EnglishSISE.BotonPerfil"
+                android:backgroundTint="@color/perfil_docente"
+                android:text="@string/perfil_docente"
+                app:icon="@drawable/ic_docente" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAdministrador"
+                style="@style/Widget.EnglishSISE.BotonPerfil"
+                android:backgroundTint="@color/perfil_administrador"
+                android:text="@string/perfil_administrador"
+                app:icon="@drawable/ic_settings" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:minHeight="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="@string/utcj"
+                android:textColor="@color/sise_navy"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/utcj_nombre"
+                android:textColor="@color/sise_text_secondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
