@@ -76,12 +76,13 @@
                         android:id="@+id/txtSaludo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/saludo_ejemplo"
+                        android:text="@string/cargando"
                         android:textColor="@color/sise_text_primary"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/txtSubtitulo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/perfil_alumno_utcj"

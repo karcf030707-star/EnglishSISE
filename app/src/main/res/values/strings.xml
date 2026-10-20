@@ -13,7 +13,6 @@
     <string name="perfil_administrador">Administrador</string>
 
     <!-- Inicio Alumno UTCJ (Tabla 4) -->
-    <string name="saludo_ejemplo">Hola, Karla Cruz</string>
     <string name="banner_alumno_utcj">¡Tu esfuerzo también se nota en inglés!</string>
     <string name="modulo_inicio">Inicio</string>
     <string name="modulo_mi_perfil">Mi perfil</string>
@@ -27,4 +26,21 @@
     <string name="nav_mas">Más</string>
     <string name="menu">Menú</string>
     <string name="proximamente">%1$s: próximamente</string>
+
+    <!-- Inicio de sesión (RF-02, RF-03) -->
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="regresar">Regresar</string>
+    <string name="ingresar_como">Ingresar como %1$s</string>
+    <string name="hint_matricula_o_correo">Matrícula o correo</string>
+    <string name="hint_correo">Correo electrónico</string>
+    <string name="hint_empleado_o_correo">Número de empleado o correo</string>
+    <string name="hint_contrasena">Contraseña</string>
+    <string name="olvidaste_contrasena">¿Olvidaste tu contraseña?</string>
+    <string name="error_campo_requerido">Este campo es obligatorio</string>
+    <string name="error_usuario_para_restablecer">Escribe tu usuario para enviarte el enlace de restablecimiento.</string>
+    <string name="enlace_enviado">Te enviamos un enlace para restablecer tu contraseña a tu correo registrado.</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="hola_nombre">Hola, %1$s</string>
+    <string name="cargando">Cargando…</string>
+    <string name="matricula_valor">Matrícula: %1$s</string>
 </resources>

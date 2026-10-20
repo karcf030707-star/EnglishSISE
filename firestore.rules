@@ -1,0 +1,27 @@
+rules_version = '2';
+
+// Reglas de seguridad de Firestore para EnglishSISE.
+// Publicar en: Firebase Console → Firestore Database → Reglas.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function esAdministrador() {
+      return request.auth != null
+        && get(/databases/$(database)/documents/usuarios/$(request.auth.uid)).data.perfil == 'administrador';
+    }
+
+    // usuarios/{uid}: cada persona lee solo su propio documento; el Administrador gestiona todos.
+    match /usuarios/{uid} {
+      allow read: if request.auth != null && (request.auth.uid == uid || esAdministrador());
+      // RF-05: el usuario solo puede actualizar su teléfono y correo.
+      allow update: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['telefono', 'correo']);
+      allow create, delete: if esAdministrador();
+    }
+
+    // Todo lo demás queda cerrado hasta que se definan sus módulos.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
