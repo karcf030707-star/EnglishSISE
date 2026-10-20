@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "808525615707",
+    "project_id": "englishsise-c8f66",
+    "storage_bucket": "englishsise-c8f66.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808525615707:android:1a6da912f671f3fbe1e57e",
+        "android_client_info": {
+          "package_name": "com.example.englishsise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpTaaTKT6MFeHDEEmDvxCb1abuIFpu6Mo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
