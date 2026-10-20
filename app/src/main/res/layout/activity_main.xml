@@ -102,7 +102,7 @@
                 android:layout_marginTop="24dp"
                 android:gravity="center"
                 android:text="@string/utcj"
-                android:textColor="@color/sise_navy"
+                android:textColor="@color/sise_primario_oscuro"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 

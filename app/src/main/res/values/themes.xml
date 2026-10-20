@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.EnglishSISE" parent="Theme.Material3.Light.NoActionBar">
-        <item name="colorPrimary">@color/sise_navy</item>
+        <item name="colorPrimary">@color/sise_primario_oscuro</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorSecondary">@color/sise_accent</item>
         <item name="android:windowBackground">@color/sise_background</item>

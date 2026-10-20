@@ -131,7 +131,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:textColor="@color/tile_red"
+                android:textColor="@color/sise_error"
                 android:textSize="14sp"
                 android:visibility="gone"
                 tools:text="Usuario o contraseña incorrectos."
@@ -157,7 +157,7 @@
                 android:layout_marginTop="8dp"
                 android:indeterminate="true"
                 android:visibility="invisible"
-                app:indicatorColor="@color/sise_navy" />
+                app:indicatorColor="@color/sise_primario_oscuro" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnOlvidaste"

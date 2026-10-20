@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/sise_navy"
+    android:background="@color/sise_primario_oscuro"
     android:orientation="vertical"
     tools:context=".InicioAlumnoUtcjActivity">
 
@@ -60,11 +60,11 @@
                     android:layout_width="52dp"
                     android:layout_height="52dp"
                     android:background="@drawable/bg_icono_circular"
-                    android:backgroundTint="@color/tile_blue_bg"
+                    android:backgroundTint="@color/tile_primario_bg"
                     android:importantForAccessibility="no"
                     android:padding="10dp"
                     android:src="@drawable/ic_person"
-                    app:tint="@color/sise_navy" />
+                    app:tint="@color/sise_primario_oscuro" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -143,7 +143,7 @@
                         <ImageView
                             style="@style/EnglishSISE.MosaicoIcono"
                             android:background="@drawable/bg_icono_redondeado"
-                            android:backgroundTint="@color/tile_blue_bg"
+                            android:backgroundTint="@color/tile_primario_bg"
                             android:importantForAccessibility="no"
                             android:src="@drawable/ic_menu_book"
                             app:tint="@color/perfil_alumno_utcj" />
@@ -169,7 +169,7 @@
                         <ImageView
                             style="@style/EnglishSISE.MosaicoIcono"
                             android:background="@drawable/bg_icono_redondeado"
-                            android:backgroundTint="@color/tile_blue_bg"
+                            android:backgroundTint="@color/tile_primario_bg"
                             android:importantForAccessibility="no"
                             android:src="@drawable/ic_person"
                             app:tint="@color/perfil_alumno_utcj" />
@@ -195,7 +195,7 @@
                         <ImageView
                             style="@style/EnglishSISE.MosaicoIcono"
                             android:background="@drawable/bg_icono_redondeado"
-                            android:backgroundTint="@color/tile_blue_bg"
+                            android:backgroundTint="@color/tile_primario_bg"
                             android:importantForAccessibility="no"
                             android:src="@drawable/ic_credencial"
                             app:tint="@color/perfil_alumno_utcj" />
@@ -221,10 +221,10 @@
                         <ImageView
                             style="@style/EnglishSISE.MosaicoIcono"
                             android:background="@drawable/bg_icono_redondeado"
-                            android:backgroundTint="@color/tile_green_bg"
+                            android:backgroundTint="@color/tile_verde_bg"
                             android:importantForAccessibility="no"
                             android:src="@drawable/ic_pago"
-                            app:tint="@color/tile_green" />
+                            app:tint="@color/tile_verde" />
 
                         <TextView
                             style="@style/EnglishSISE.MosaicoTexto"
@@ -247,10 +247,10 @@
                         <ImageView
                             style="@style/EnglishSISE.MosaicoIcono"
                             android:background="@drawable/bg_icono_redondeado"
-                            android:backgroundTint="@color/tile_red_bg"
+                            android:backgroundTint="@color/tile_naranja_bg"
                             android:importantForAccessibility="no"
                             android:src="@drawable/ic_notifications"
-                            app:tint="@color/tile_red" />
+                            app:tint="@color/tile_naranja" />
 
                         <TextView
                             style="@style/EnglishSISE.MosaicoTexto"

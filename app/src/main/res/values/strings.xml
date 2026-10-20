@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">EnglishSISE</string>
-    <string name="logo_englishsise">English<font color="#4FC3F7">SISE</font></string>
+    <string name="logo_englishsise">English<font color="#F5A05A">SISE</font></string>
     <string name="subtitulo_sistema">Sistema de control de cursos de Inglés</string>
     <string name="utcj">UTCJ</string>
     <string name="utcj_nombre">Universidad Tecnológica de Ciudad Juárez</string>

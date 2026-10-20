@@ -3,6 +3,6 @@
     <gradient
         android:angle="0"
         android:endColor="@color/perfil_alumno_utcj"
-        android:startColor="@color/sise_navy" />
+        android:startColor="@color/sise_primario_oscuro" />
     <corners android:radius="16dp" />
 </shape>
